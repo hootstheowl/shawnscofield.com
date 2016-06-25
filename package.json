@@ -1,0 +1,55 @@
+{
+  "name": "shawnscofield.com",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hootstheowl/shawnscofield.com"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:production": "npm run clean && webpack --config webpack.config.prod.js",
+    "build:dev": "npm run clean && webpack --config webpack.config.dev.js",
+    "build": "npm run build:production",
+    "start:production": "npm run build:production && npm run start",
+    "start:dev": "npm run build:dev && npm run start",
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.9.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.4.0",
+    "eslint-plugin-react": "^5.1.1",
+    "express": "^4.13.4",
+    "node-sass": "^3.7.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.1",
+    "modernizr": "^3.3.1",
+    "modernizr-loader": "0.0.5",
+    "three-js": "git+ssh://git@github.com:JordanDelcros/npm-three-js.git#88fc5f582ca5106017c4c3cc1f173db20ced239d"
+  }
+}
