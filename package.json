@@ -50,6 +50,6 @@
     "classnames": "^2.2.1",
     "modernizr": "^3.3.1",
     "modernizr-loader": "0.0.5",
-    "three-js": "git+ssh://git@github.com:JordanDelcros/npm-three-js.git#88fc5f582ca5106017c4c3cc1f173db20ced239d"
+    "three-js": "https://github.com/JordanDelcros/npm-three-js.git#88fc5f582ca5106017c4c3cc1f173db20ced239d"
   }
 }
