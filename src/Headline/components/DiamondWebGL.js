@@ -114,7 +114,6 @@ export default class DiamondWebGL extends Component {
     this.scene = null;
     this.renderer = null;
     this.composer = null;
-    this.loadingManager = null;
   }
   handleWindowResize() {
     this.camera.aspect = this.windowWidth() / this.windowHeight();
