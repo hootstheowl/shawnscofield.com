@@ -5,7 +5,7 @@ import Modernizr from 'modernizr';
 import './stylesheets/Headline.scss';
 
 export default class HeadlineContainer extends Component {
-  renderBubbles() {
+  renderBackground() {
     if (Modernizr.webgl) {
       return (
         <DiamondWebGL />
@@ -32,7 +32,7 @@ export default class HeadlineContainer extends Component {
           />
         </a>
         <HelloBox />
-        {this.renderBubbles()}
+        {this.renderBackground()}
       </div>
     );
   }

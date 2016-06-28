@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
 import threeJS from 'three-js';
 import Projector from 'three-js/addons/Projector';
 import CanvasRenderer from 'three-js/addons/CanvasRenderer';
@@ -147,7 +146,7 @@ export default class BubbleCanvas extends Component {
       <div
         className="headline-canvas"
         ref={ref => {
-          this.container = ReactDOM.findDOMNode(ref);
+          this.container = ref;
         }}
       />
     );
