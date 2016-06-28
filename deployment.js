@@ -7,7 +7,12 @@ if (!which('git')) {
   process.exit(1);
 }
 
-cron.schedule('*/5 * * * *', () => {
+cron.schedule('*/2 * * * *', () => {
   echo('pulling most recent changes...');
-  exec('git pull origin master');
+  exec('git pull origin master', (code, stdout) => {
+    if (stdout.search('Already up-to-date') < 0) {
+      echo('Changes detected, building dist...');
+      exec('npm run build:production');
+    }
+  });
 });
