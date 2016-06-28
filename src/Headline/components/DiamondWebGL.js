@@ -42,7 +42,6 @@ export default class DiamondWebGL extends Component {
     this.scene = null;
     this.renderer = null;
     this.composer = null;
-    this.loader = null;
     this.state = {
       theta: this.props.theta,
       then: Date.now(),
@@ -116,7 +115,6 @@ export default class DiamondWebGL extends Component {
     this.renderer = null;
     this.composer = null;
     this.loadingManager = null;
-    this.loader = null;
   }
   handleWindowResize() {
     this.camera.aspect = this.windowWidth() / this.windowHeight();
