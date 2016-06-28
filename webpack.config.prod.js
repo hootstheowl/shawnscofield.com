@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'cheap-module-source-map',
   entry: [
     'babel-polyfill',
     './src/index',
@@ -21,7 +21,12 @@ module.exports = {
     }),
     new webpack.optimize.DedupePlugin(),
     new webpack.ContextReplacementPlugin(/.*$/, /NEVER_MATCH^/),
-    new webpack.optimize.UglifyJsPlugin({ minimize: true }),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      compress: {
+        warnings: false,
+      },
+    }),
   ],
   module: {
     loaders: [
