@@ -12,7 +12,7 @@ export default class BubbleCanvas extends Component {
     readius: PropTypes.number,
     opacity: PropTypes.number,
     count: PropTypes.number,
-    palette: PropTypes.array,
+    palette: PropTypes.func,
   }
   static defaultProps = {
     fps: 30,

@@ -41,6 +41,22 @@
 
   }
 
+  .links {
+    text-align: center;
+    
+    a {
+      color: #FFF;
+    }
+
+    .fa {
+      font-size: 2em;
+      padding: .5em;
+      padding-left: .7em;
+      padding-right: .7em;
+    }
+
+  }
+
 }
 
 @include keyframes(draw) {
