@@ -53,6 +53,9 @@
       padding: .5em;
       padding-left: .7em;
       padding-right: .7em;
+      @include animation(
+        '1.5s fade ease-in-out'
+      );
     }
 
   }
