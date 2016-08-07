@@ -19,18 +19,21 @@ export default class HelloBox extends Component {
         <div className="links">
           <a
             href="https://github.com/hootstheowl/shawnscofield.com"
+            title="GitHub"
             target="_blank"
           >
             <i className="fa fa-github" />
           </a>
           <a
             href="http://stackoverflow.com/users/6590624/hootstheowl"
+            title="Stack Overflow"
             target="_blank"
           >
             <i className="fa fa-stack-overflow" />
           </a>
           <a
             href="https://www.linkedin.com/in/shawn-scofield"
+            title="Linkedin"
             target="_blank"
           >
             <i className="fa fa-linkedin" />
