@@ -17,7 +17,6 @@ const THREE = threeJS([
 export default class DiamondWebGL extends Component {
   static propTypes = {
     fps: PropTypes.number,
-    border: PropTypes.number,
     theta: PropTypes.number,
     radius: PropTypes.number,
     opacity: PropTypes.number,
@@ -26,7 +25,6 @@ export default class DiamondWebGL extends Component {
   }
   static defaultProps = {
     fps: 30,
-    border: 9,
     theta: 0.1,
     radius: 600,
     opacity: 0.1,
@@ -121,10 +119,10 @@ export default class DiamondWebGL extends Component {
     this.renderer.setSize(this.windowWidth(), this.windowHeight());
   }
   windowWidth() {
-    return window.innerWidth - this.props.border * 2;
+    return window.innerWidth;
   }
   windowHeight() {
-    return window.innerHeight - this.props.border * 2;
+    return window.innerHeight;
   }
   generatePosition() {
     return Math.random() * 800 - 400;

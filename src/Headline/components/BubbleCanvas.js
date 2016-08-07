@@ -7,7 +7,6 @@ const THREE = threeJS([Projector, CanvasRenderer]);
 export default class BubbleCanvas extends Component {
   static propTypes = {
     fps: PropTypes.number,
-    border: PropTypes.number,
     theta: PropTypes.number,
     readius: PropTypes.number,
     opacity: PropTypes.number,
@@ -16,7 +15,6 @@ export default class BubbleCanvas extends Component {
   }
   static defaultProps = {
     fps: 30,
-    border: 9,
     theta: 0.1,
     readius: 600,
     opacity: 0.15,
@@ -101,10 +99,10 @@ export default class BubbleCanvas extends Component {
     this.renderer.setSize(this.windowWidth(), this.windowHeight());
   }
   windowWidth() {
-    return window.innerWidth - this.props.border * 2;
+    return window.innerWidth;
   }
   windowHeight() {
-    return window.innerHeight - this.props.border * 2;
+    return window.innerHeight;
   }
   generatePosition() {
     return Math.random() * 800 - 400;
