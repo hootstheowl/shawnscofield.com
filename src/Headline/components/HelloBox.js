@@ -38,6 +38,13 @@ export default class HelloBox extends Component {
           >
             <i className="fa fa-linkedin" />
           </a>
+          <a
+            href="https://codepen.io/hootstheowl"
+            title="CodePen"
+            target="_blank"
+          >
+            <i className="fa fa-codepen" />
+          </a>
         </div>
       </div>
     );
