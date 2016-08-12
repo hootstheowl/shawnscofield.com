@@ -18,7 +18,7 @@ export default class HelloBox extends Component {
         </div>
         <div className="links">
           <a
-            href="https://github.com/hootstheowl/shawnscofield.com"
+            href="https://github.com/hootstheowl"
             title="GitHub"
             target="_blank"
           >
