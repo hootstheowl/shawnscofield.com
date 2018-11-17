@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,600,400);
 
-html {
+html,
+#app {
   height: 100%;
 }
 *, :after, :before {
@@ -25,6 +26,20 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-#root {
+#app {
   height: 100%
+}
+
+.headline-wrap {
+  height: 100%;
+  overflow: hidden;
+  color: #FFF;
+  box-sizing: border-box;
+  border: .3em solid #FFF;
+
+  .headline-canvas {
+    height: 100%;
+    background: #ff0084;
+    background: linear-gradient(to left, #8b3ca6 , #0d0027);
+  }
 }

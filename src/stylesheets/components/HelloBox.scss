@@ -1,5 +1,3 @@
-@import '../../App/stylesheets/mixins.scss';
-
 .hello-box {
   width: 700px;
   height: 230px;
@@ -7,9 +5,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  @include transform(
-    translate(-50%, -50%)
-  );
+  transform: translate(-50%, -50%);
 
   .content {
     position:relative;
@@ -20,9 +16,7 @@
       stroke-dasharray: 0 1860;
       stroke-width: 3px;
       stroke: #FFF;
-      @include animation(
-        '0.7s draw ease-in-out forwards'
-      );
+      animation: 0.7s draw ease-in-out forwards;
     }
 
     p {
@@ -34,35 +28,27 @@
       font-weight: 100;
       font-size: 3em;
       text-align: center;
-      @include animation(
-        '1.5s fade ease-in-out'
-      );
+      animation: 1.5s fade ease-in-out;
     }
-
   }
 
   .links {
     text-align: center;
+    padding-top: .5em;
     
     a {
       color: #FFF;
     }
 
-    .fa {
+    i {
       font-size: 2em;
-      padding: .5em;
-      padding-left: .7em;
-      padding-right: .7em;
-      @include animation(
-        '1.5s fade ease-in-out'
-      );
+      padding: 0 .5em 0 .5em;
+      animation: 1.5s fade ease-in-out;
     }
-
   }
-
 }
 
-@include keyframes(draw) {
+@keyframes draw {
   0% {
     stroke-dasharray: 0 1860;
     stroke-width: 20px;
@@ -76,11 +62,11 @@
   }
 }
 
-@include keyframes(fade) {
+@keyframes fade {
   0% {
-    @include opacity(0);
+    opacity: 0;
   }
   100% {
-    @include opacity(1);
+    opacity: 1;
   }
 }

@@ -1,1 +1,0 @@
-# shawnscofield.com
